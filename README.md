@@ -2,6 +2,15 @@
 中原大學 資訊工程學系 許逸翔  
 github合作紀錄：https://github.com/OwO-OwO-Group/DS
 
+
+## Project
+* MRCNN
+用於辨識坑洞的MRCNN專案
+* RAU
+特製的RAU單元，能加入在CNN網路中
+* DATA
+用於轉換輸入的資料集
+
 ## C_Interpreter
 約4000行的C直譯器，能執行真實的C語言。  
 可以用的語法包括陣列、迴圈、函式呼叫及傳遞參數。
