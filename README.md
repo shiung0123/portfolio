@@ -4,11 +4,11 @@ github合作紀錄：https://github.com/OwO-OwO-Group/DS
 
 
 ## Project
-* MRCNN
+* MRCNN  
 用於辨識坑洞的MRCNN專案
-* RAU
+* RAU  
 特製的RAU單元，能加入在CNN網路中
-* DATA
+* DATA  
 用於轉換輸入的資料集
 
 ## C_Interpreter
