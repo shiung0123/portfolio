@@ -1,5 +1,6 @@
 # 110學年度碩士班推甄作品集
 中原大學 資訊工程學系 許逸翔
+github合作紀錄：https://github.com/OwO-OwO-Group/DS
 
 ## C_Interpreter
 約4000行的C直譯器，能執行真實的C語言。
@@ -8,6 +9,13 @@
 ## Computer_Organization
 * DrawJuliaSet
 * PipeCPU
+
+## Operating_System
+* FRANCIS_Compiler
+* SIC_Assembler
+* CPU_Scheduling
+* Page_Replacement
+* MultiThreads_MultiProcesses
 
 ## Data_Structure
 * Read_File
@@ -33,10 +41,3 @@
 * DFS.py
 * Euler_Tour.py
 * Minimum_Spanning_Tree.py
-
-## Operating_System
-* FRANCIS_Compiler
-* SIC_Assembler
-* CPU_Scheduling
-* Page_Replacement
-* MultiThreads_MultiProcesses
