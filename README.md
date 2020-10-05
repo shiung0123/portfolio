@@ -1,9 +1,9 @@
 # 110學年度碩士班推甄作品集
-中原大學 資訊工程學系 許逸翔
+中原大學 資訊工程學系 許逸翔  
 github合作紀錄：https://github.com/OwO-OwO-Group/DS
 
 ## C_Interpreter
-約4000行的C直譯器，能執行真實的C語言。
+約4000行的C直譯器，能執行真實的C語言。  
 可以用的語法包括陣列、迴圈、函式呼叫及傳遞參數。
 
 ## Computer_Organization
