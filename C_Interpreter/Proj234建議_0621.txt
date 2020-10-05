@@ -1,0 +1,101 @@
+Proj234 Suggestion
+
+請先看過老大的文件再來服用本文件，
+以下內容為通過者的建議，但不保證其正確性。
+其中的建議可套用到234的題目，也就是2的建議，4同樣適用。
+非基本的3種ERROR，其他ERROR都不會存在。
+
+------------------------------
+【Proj2 Suggestion】
+
+GetToken(ERROR1)
+1. 只有'.'算錯
+2. ID會有'_'開頭
+
+Syntax(ERROR2、ERROR3)
+1. 文法中會有模稜兩可的情況，
+   如user_input，會無法立即判斷要呼叫definition或statement，
+   可以採用類似DFS的都嘗試，或是提前偷看並判斷
+2. 額外的System-supported只會出現在最上層，
+   也就是說可以搶在user_input之上就提前判斷，
+   ListVariable(str); <-str必定是"xxx"，不會是ID，也不用運算，保證存在
+   ListFunction(str); <-str必定是"xxx"，不會是ID，也不用運算，保證存在
+   cout := cout { << maybe_additive_exp } ; <- return最後印出的
+   cin不會讀值，只要做文法檢查
+3. Error Line Number，讀到\n就+1，註解/空行都算
+
+4. 邊做文法檢查，邊測試ID存在
+>>>
+a
+;
+<<<
+應輸出
+>>>
+Line 2 : undefined a
+Statement ...
+<<<
+
+5. pertty print
+>>>
+int A() {
+  do {
+    ;
+  }
+  while ( false ) ;
+  while ( false ) {
+    if ( false ) {
+    }
+    else {
+    }
+  }
+  int a ;
+  a++ + ++a ;
+  + a + - + ! a ;
+  a, a ;
+  a ? a : a ;
+  int b[ 5 ] ;
+  b[ 0 ]++ + ++b[ 0 ] ;
+  A() ;
+}
+<<<
+
+------------------------------
+【Proj3 Suggestion】
+
+Compute
+1. 計算前再取ID值，op1與op2的取值順序，Function call > () > other
+2. 哪些可以運算，做你認為合理的，其他的輸出錯誤
+   char[] + string 可運算
+   str 可以+ 任何東西
+   char 僅與 char 比較
+   bool 存1/0，不是true/false，但輸出時是true/false
+3. 浮點數比較可以有誤差0.0001
+4. 浮點數輸出要四捨五入到小數點後3位
+5. 不需要處理 &|^，僅檢查文法
+6. return value應是資料結構，不單只有值
+
+------------------------------
+【Proj4 Suggestion】
+
+Function Call
+1. arr[] 是 call by ref
+2. return 提早結束，可以不寫
+
+------------------------------ 
+【其他建議】
+
+1. 容器：array、<vector>、<map>
+   (強烈不建議<queue>和其他有動態配置的STL，PL會擋掉)
+2. 儲存Ident之資料結構
+   建議使用BST，Inorder會是排序後之結果
+   樹內建議放pointer，以後即使值變動，也不需要刻意handle樹
+3. 強烈推薦try-throw-catch
+
+------------------------------
+文件作者：10627116(6/21)、10627218(6/21)、10627226(6/21)
+歡迎其他通過的人一起編輯
+
+
+
+
+    
