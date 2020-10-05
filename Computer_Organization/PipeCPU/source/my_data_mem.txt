@@ -1,0 +1,12 @@
+// total 256 words, init 4 words
+// word A 00010011 d19
+13
+00
+00
+00
+// word B 00001010 d10
+0A
+00
+00
+00
+// word C

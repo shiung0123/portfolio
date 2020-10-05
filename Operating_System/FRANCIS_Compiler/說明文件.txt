@@ -1,0 +1,49 @@
+SPHW3
+10627116 資訊三甲 許逸翔
+開發平台：Windows 10
+開發環境：Visual Studio 2019, Windows SDK 10.0
+程式語言：C++11
+程式設計：
+    1. 分成PASS1：LA(切token)
+           PASS2: SA(檢查syntax)
+           PASS3：translate machine code(翻譯指令)
+           PASS4：更新GTO，CALL(因為有forward reference)
+           
+    2. 設計token table              ：table1(Delimiter)、table2(Reserved word)、table3(Int)、table4(Real)、table5(Str)
+           id table                 ：有id(str)、scope(int)、type(int)、pointer(int)
+           intermediate code table  ：有line(int), code(vector<pair<int, int>>), input(str)
+           table7                   ：int
+       皆採用vector結構，方便調整大小
+       固定為100做Hash，第0格不放東西
+       
+    3. LA：使用i作為index，一格一格移動來切出Token
+    
+    4. SA：使用遞迴的方式檢查，不會生成Parse tree，只回傳對錯
+    
+    5. translate：根據SA的文法，將指令做出不一樣動作
+
+    6. table5與id table不同，table5是切Token用的，id table是translate用的
+    
+    7. id table新增時，會檢查變數名稱是否重複；查詢時，會檢查是否被定義
+    
+    8. Array Element在產生時會檢查元素個數與當初定義時是否一樣
+    
+    9. Array Element產生順序從最高維度開始翻譯
+    
+    10. 暫存器T的使用，每個指令都會初始化T為1，因為指令間暫存器不會共用
+    
+    11. Assign左邊若為Array Element，會使用原始方式，不是一步到位，先算位置，才會Assign
+    
+    12. IF指令不論TRUE PART的情況如何，都會產生GTO
+    
+未完成的功能：
+    1. CALL的參數型態和個數無法檢查
+    
+    2. Assign時的型態無法檢查
+    
+    3. 11、12點可以改善
+    
+    4. 根據文法，不少運算式和陣列元素在很多地方不能用，可以修改文法並增加功能
+    
+    5. 錯誤清單不該與正確放在同一個表格
+    

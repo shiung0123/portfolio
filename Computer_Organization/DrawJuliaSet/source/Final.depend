@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1546231304 source:/home/pi/asm/code/Final/id.s
+
+1546231302 source:/home/pi/asm/code/Final/juliaset.s
+
+1546231307 source:/home/pi/asm/code/Final/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<sys/mman.h>
+	<fcntl.h>
+
+1546231305 source:/home/pi/asm/code/Final/name.s
+

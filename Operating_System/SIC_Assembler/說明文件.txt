@@ -1,0 +1,28 @@
+SPHW2
+10627116 資訊三甲 許逸翔
+開發平台：Windows 10
+開發環境：Visual Studio 2019, Windows SDK 10.0
+程式語言：C++11
+組合語言：SIC, SICXE
+程式設計：
+    1. 分成PASS1：LA(切token)、SA(檢查syntax)、PSEUDO(執行假指令)
+           PASS2：translate machine code(翻譯指令)
+           
+    2. 設計token table      ：有token(str)、index(pair<int, int>)
+           instruction table：有ins(str)、opcode(int)
+           symbol table     ：有label(str), address(int)
+           literal table    ：有literal(str), address(int)
+       皆採用vector結構，方便調整大小
+       literal固定為100做Hash
+       
+    3. SA：使用i作為index，一格一格移動來判斷文法正確性
+    
+    4. translate：根據SA的文法，將對應位置都翻譯成bin，最後組裝再換回hex
+    
+    5. CA：使用vector作為資料庫，有line(int)、address(int)、
+                                   tokens(vector<pair<int, int>>)、codes(str)
+未完成的功能：
+    1. 沒有檢查literal的長度，可用if判斷
+    2. 各種table class的整合，改為繼承結構
+    3. syntax檢查有大部分是用if...else...結構，用遞迴會更好
+    4. EQU的四則運算功能不夠強大，可用scope的概念增加括號的運算

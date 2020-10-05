@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\avltree.cpp
+	"AVLTree.h"
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\avltree.h
+	"Data.h"
+	<vector>
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\data.h
+	"Header.h"
+	<iostream>
+	<string>
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\header.h
+	<iostream>
+	<string>
+	<vector>
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\data.cpp
+	"Data.h"
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\handlefile.cpp
+	"HandleFile.h"
+	"AVLTree.h"
+	"Data.h"
+	"Tree23.h"
+	<algorithm>
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\handlefile.h
+	"Data.h"
+	"Header.h"
+	<fstream>
+	<iostream>
+	<limits>
+	<string>
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\tree23.h
+	"Data.h"
+	<string>
+	<vector>
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\header.cpp
+	"Header.h"
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\main.cpp
+	"HandleFile.h"
+	"Header.h"
+	"Test.h"
+	<ctime>
+	<iostream>
+	<string>
+
+1554778072 d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\test.h
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\test.cpp
+	"Test.h"
+	"AVLTree.h"
+	"Tree23.h"
+	<iostream>
+
+1554778072 source:d:\school\data_structure\107-2\ex2\ds2ex2_10_10627116_10612150\tree23.cpp
+	"Tree23.h"
+	<algorithm>
+
